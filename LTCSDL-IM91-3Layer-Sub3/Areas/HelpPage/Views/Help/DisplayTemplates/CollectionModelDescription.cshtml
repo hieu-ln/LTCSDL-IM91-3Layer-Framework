@@ -1,0 +1,6 @@
+@using LTCSDL_IM91_3Layer_Sub3.Areas.HelpPage.ModelDescriptions
+@model CollectionModelDescription
+@if (Model.ElementDescription is ComplexTypeModelDescription)
+{
+    @Html.DisplayFor(m => m.ElementDescription)
+}

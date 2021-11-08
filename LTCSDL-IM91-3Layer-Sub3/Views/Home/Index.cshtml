@@ -1,0 +1,31 @@
+﻿@model List<LTCSDL.IM91.DTO.Category>
+<div class="jumbotron">
+    <h1>Lớp IM91 thật dễ thương !!!</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <p>Danh sách cách Category lấy được:</p>
+        <table class="table-bordered">
+            <tr>
+                <th>ID</th>
+                <th>Category Name</th>
+                <th>Description</th>
+            </tr>
+            @foreach (var cat in Model)
+            {
+                <tr>
+                    <td>@cat.CategoryID.</td>
+                    <td>@cat.CategoryName.</td>
+                    <td>@cat.Description</td>
+                </tr>
+            }
+        </table>
+    </div>   
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+    </div>
+</div>
